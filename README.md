@@ -20,14 +20,14 @@ CRIWAREはカスタムDSPエフェクトをDLLとして外部から読み込む�
 ```
 .
 ├── CMakeLists.txt          ビルド定義（CMake）
-├── cri/
-│   ├── cri_audio_effect.h  CRI提供のエフェクトインターフェースヘッダ（変更不可）
-│   └── README.md
 ├── src/
 │   ├── SynthInterface.h    CRIインターフェース関数の宣言・静的テーブル定義
 │   ├── SynthInterface.cpp  CRIインターフェース関数の実装（Create/Destroy/Process等）
 │   ├── KMSynthDllAdapter.h シンセエンジンとCRIインターフェースをつなぐアダプタクラス
 │   └── KMSynthDllAdapter.cpp
+├── unity/
+│   ├── KMSynthDllLoader.cs  　　Dllの呼び出しコード
+│   └── KMSynthDllController.cs　Dllの操作コード
 └── win/
     ├── dllmain.cpp         DllMain エントリポイント（定型実装）
     └── export_symbols.def  DLLエクスポートシンボル定義（GetInterfaceWithVersion のみ）
