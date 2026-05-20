@@ -145,4 +145,4 @@ CRIWAREの仕様上、`CalculateWorkSize` が 0 を返すと `Create` が呼ば�
 本リポジトリのオリジナルコード（`src/` および `win/dllmain.cpp` の実装部分）は  
 POnozuka によるものです。 
 
-※cri_audio_effect.hにつきましては非公開となりました。
+※cri_audio_effect.hにつきましては非公開となります。
