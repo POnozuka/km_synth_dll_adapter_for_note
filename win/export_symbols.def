@@ -1,0 +1,4 @@
+LIBRARY	KMSynth_CRI
+
+EXPORTS
+	GetInterfaceWithVersion
